@@ -25,5 +25,5 @@ jobs:
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}   
       run: |
-        docker buildx build ./keycloak-containers/server -t $DOCKER_USER/pivpn:latest --platform linux/arm64,linux/amd64 --push
+        docker buildx build ./keycloak-containers/server -t $DOCKER_USER/keycloak:latest --platform linux/arm64,linux/amd64 --push
 # linux/arm64,linux/arm/v6,linux/amd64
